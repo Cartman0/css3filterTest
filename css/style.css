@@ -1,0 +1,37 @@
+html, body {
+  font-size: 18px;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  text-align: center;
+}
+.div-file-img {
+  display: inline-block;
+  max-width: 45%;
+  margin: 0 5% 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.div-img {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.img-print {
+  border: 1px solid #333;
+  max-width: 100%;
+}
+.div-ranges {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 45%;
+}
+.div-range {
+  margin: 1rem 0;
+}
+div label {
+  display: inline-block;
+  width: 11rem;
+}
+.current-value {
+  display: inline-block;
+  width: 10rem;
+}

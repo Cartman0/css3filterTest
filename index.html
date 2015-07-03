@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CSS3 のfilter のテストです。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Filter Sample</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>CSS Filter Sample</h1>
+  </header>
+
+  <main>
+    <div class="div-file-img">
+      <div>
+        <input type="file" id="file-image" accept="image/*">
+      </div>
+      <div class="div-img">
+        <img src="#" alt="" class="img-print" id="print_img">
+      </div>
+    </div>
+    <div class="div-ranges">
+      <div class="div-range">
+        <label for="grayscale">grayscale:モノクロ</label>
+        <input type="range" id="grayscale" value="0" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="sepia">sepia:セピア</label>
+        <input type="range" id="sepia" value="0" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="saturate">saturate:彩度</label>
+        <input type="range" id="saturate" value="100" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="hue-rotate">hue-rotate:色相回転</label>
+        <input type="range" id="hue-rotate" value="0" min="0" max="360" data-unit="deg">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="invert">invert:階調反転</label>
+        <input type="range" id="invert" value="0" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="opacity">opacity:透過度</label>
+        <input type="range" id="opacity" value="100" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="brightness">brightness:明るさ</label>
+        <input type="range" id="brightness" value="100" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="contrast">contrast:コントラスト</label>
+        <input type="range" id="contrast" value="100" min="0" max="100" data-unit="%">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="blur">blur:ぼかし</label>
+        <input type="range" id="blur" value="0" min="0" max="50" data-unit="px">
+        <span class="current-value"></span>
+      </div>
+      <div class="div-range">
+        <label for="drop-shadow">drop-shadow:影</label>
+        <input type="range" id="drop-shadow" value="0" min="0" max="50" data-unit="px 0px 10px #000">
+        <span class="current-value"></span>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/read_img.js"></script>
+  <script src="js/jquery_css_filter.js"></script>
+</body>
+
+</html>
